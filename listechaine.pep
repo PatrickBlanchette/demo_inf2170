@@ -1,4 +1,4 @@
-main:    SUBSP   8,i
+main:    SUBSP   10,i
          LDA     0,i
          STA     s,s
          STA     olds,s
@@ -30,7 +30,7 @@ while:   CPX     0,i
          CHARO   ' ',i
          CALL    geto
          BR      while
-end:     ADDSP   8,i         
+end:     ADDSP   10,i         
          STOP                
 ; variable local du main
 s:       .EQUATE 0           
